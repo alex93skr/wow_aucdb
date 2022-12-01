@@ -1,0 +1,249 @@
+
+
+===============
+
+<SPAN>
+
+Копировать текст в буфер обмена
+https://html5css.ru/howto/howto_js_copy_clipboard.php
+https://atuin.ru/blog/kopirovanie-teksta-v-bufer-obmena-po-kliku/
+
+===============
+
+
+D:\Games\World of Warcraft\_classic_\WTF\Account\112287723#2\SavedVariables
+
+
+БЛИЗ АПИ		https://develop.battle.net
+
+curl --header "Authorization: Bearer <access_token>" <REST API URL>
+https://<request URI>/?access_token=2R1ET64L2q6zlPdHIgUMuKhAewJSRpiD
+
+07fb5dadbad5413facec876a4726e1da
+Client ID
+2R1ET64L2q6zlPdHIgUMuKhAewJSRpiD
+Client Secret
+
+
+https://us.battle.net/oauth/authorize?response_type=code&client_id=07fb5dadbad5413facec876a4726e1da&scope=wow.profile%20sc2.profile&redirect_uri=https://develop.battle.net/documentation/api-reference/world-of-warcraft-profile-api
+
+
+/run print(GetItemSubClassInfo(0, 3))
+GetItemSubClassInfo(4, 0)
+13512
+
+
+for i = 0, 20 do
+	print(GetItemSubClassInfo(i, 0))
+end
+
+
+ГРУППЫ НА ВЫКУП
+
+ПО КАУНТУ / СРЕДНЯЯ ЦЕНА
+
+13468 0           10  45.74.38  Черный лотос https://ru.classic.wowhead.com/item=13468
+12811 0            2  47.00.00  Сфера Праведности https://ru.classic.wowhead.com/item=12811
+
+
+10822 0            5  41.93.99  Маленький темный дракончик https://ru.classic.wowhead.com/item=10822
+
+
+
+16084  0 	 Умелец первой помощи: снимая покровы https://ru.classic.wowhead.com/item=16084
+
+==============================
+
+СТАТИКА
+-------
+
+- среднее выкуп
+ - среднее без погрешностей 
+  - отклонения от среднего без погрешностей (дешевый выкуп)  
+- отношение: маленькая ставка к большому выкупу
+- выкуп к цене продавца хз где брать
+
+
+ДИНАМИКА
+--------
+
+графики
+
+- увеличение/снижения кол-ва ставок (+кол-во единиц в ставке)
+
+==============================
+
+АНЛИТИКА ДАННЫЕ
+
+
+архив_дата = 
+{[
+{1111},{22222},{2221}
+]}
+
+курент_дата = 
+{в ID аналитика из архивов}
+
+
+--------
+
+
+МАТЕМАТИКА
+
+
+
+
+
+-------
+
+Меры центральной тенденции	
+https://tproger.ru/translations/basic-statistics-in-python-descriptive-statistics/
+
+Среднее значение - среднее арифметическое
+Медиана		- визуальная середина
+Мода		- наиболее часто встречающееся значение
+
+Меры разброса данных
+Размах				price_range = max_price - min_price
+Стандартное отклонение		отход от среднего значения
+	в numpy через функцию std
+
+----------
+56.30.00
+
+среднее
+
+1 - 33
+8 - 176 
+среднее		23,2222222
+
+1 - 33
+(1 - 22)
+среднее		27.5
+
+
+4362  0      7   77777 Грубый громобой
+
+--------------
+
+отношение дешевого выкуп к среднему выкупу
+
+средний		140
+дешевый		80
+
+80 / 140 * 100 = 57%
+
+
+=======================================
+
+СТРУКТУРА
+
+
+data_archive = {}
+
+{ts:int = {
+	itemDBcount = int
+	itemsCount = int
+	count = 29444:int
+	count_of_all_sub = 29444:int
+    count_of_all_bids = 17600:int
+	parsData = {
+		id:123123 = {
+			subid:int = {
+				count_of_bids = 3:int
+				count_of_internal_bids = 12:int
+				avg_buyoutPrice	= int
+				median_buyoutPrice = int
+				mode_buyoutPrice = int
+				bids = {
+					
+					0:int = {
+					  seller = 
+                      timeleft = int
+                      itemCount =  int
+                      minBid =  int
+                      buyoutPrice =  int
+                      curBid = ???}
+				}
+			}
+		}
+	}
+}
+
+
+---
+
+data_current = {}
+
+{
+	itemDBcount =  int
+    itemsCount =  int
+    count =  int
+	count_of_all_sub =  int
+    count_of_all_bids =  int
+    parsData = {
+		'id':int = {
+			'sub':int = {
+				count_of_bids = int
+				count_of_internal_bids = int
+				avg_buyoutPrice = int
+				median_buyoutPrice = int
+				mode_buyoutPrice = int
+				avg_from_all_archive_avg_buyoutPrice = int
+				'bids' = {
+					0:int = {
+						seller
+						timeleft
+						itemCount
+						minBid
+						buyoutPrice
+						curBid
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+----
+
+
+
+wh_item = {]
+{'id':str = {
+	'@id' = {str} '731'
+	'name' = {str} 'Goretusk Snout'
+	'level' = {str} '12'
+	'quality' = {dict} <class 'dict'>: {'@id': '1', '#text': 'Common'}
+		'@id' (1575969577928) = {str} '1'
+		'#text' (1575977791192) = {str} 'Common'
+	'class' = {dict} <class 'dict'>: {'@id': '7', '#text': 'Trade Goods'}
+	'subclass' = {dict} <class 'dict'>: {'@id': '8', '#text': 't'}
+	'icon' = {dict} <class 'dict'>: {'@displayId': '8802', '#text': 'spell_magic_polymorphpig'}
+	'inventorySlot' = {dict} <class 'dict'>: {'@id': '0'}
+	'json'= {dict} <class 'dict'>: {'classs': 7, 'displayid': 8802, 'flags2': 8192, 'id': 731, 'level': 12, 'name': '7Goretusk Snout', 'slot': 0, 'source': [2], 'sourcemore': [{'z': 40}], 'subclass': 8}
+	'jsonEquip' = {dict} <class 'dict'>: {'avgbuyout': 27, 'displayid': 8802, 'dmgrange': 1.0, 'sellprice': 27}
+	'link' = {str} 'https://classic.wowhead.com/item=731'
+	}
+}
+
+
+----
+
+
+wh_npc = {}
+{'id':str = {
+	'name' (1574635102136) = {str} 'Рангист'
+	'zone' (1574635143216) = {str} ''
+		'Уровень' (1574631966904) = {str} '5'
+		'Реакция' (1574631967008) = {str} '[color=q2]A[\\/color]'
+		'Фракция' (1574631967736) = {str} '[url=\\/faction=72]Штормград[\\/url]'
+		'Можно починить' (1574615360944) = {bool} True
+		'Добавлено' (1574593874944) = {str} '1.13.2.30406'
+	'info' (1574635143272) = {dict} <class 'dict'>: {'Добавлено': '1.13.2.30406'}
+	'drop' (1574635143384) = {NoneType} None
+}
+========================================
+
+

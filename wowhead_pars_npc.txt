@@ -1,0 +1,154 @@
+
+
+50	-	3 мин
+18000	-	18 часов
+
+АНАЛИТИКА
+
+сорт по голде
+
+с дропом так чтото хитрое
+percentOverride
+        "modes": {
+          "1": {
+            "count": -1,
+            "outof": 0
+          },
+          "2": {
+            "count": -1,
+            "outof": 0
+          },
+          "mode": 2
+        },
+		
+
+
+======================================
+
+ТИПЫ
+
+Босс 153
+Редкий 272
+Редкий элитный 137
+элит. 2059
+Обычные 7754
+
+---
+
+[ТИПь УРОВЕНЬ]
+
+['Босс', '??']
+['Босс', None]
+['Босс', '60']
+['Босс', '62']
+
+['Редкий', '12']
+['Редкий', '??']
+['Редкий', None]
+['Редкий', '6 - 7']
+
+['Редкий элитный', None]
+['Редкий элитный', '21']
+['Редкий элитный', '29 - 30']
+
+['элит.', None]
+['элит.', '35']
+['элит.', '50 - 51']
+
+[None, None]
+[None, '21 - 22']
+[None, '2']
+
+
+---
+
+СТРУТУРА
+
+
+id = {
+	name
+	type
+	zone
+	info = {,,,}
+	drops = [{},{},{}]
+}
+
+============================================
+
+ПАРСИНГ
+
+https://ru.classic.wowhead.com/npc=12201
+
+
+
+<title>Принцесса Терадрас - NPC - World of Warcraft</title>
+
+База данных	NPC	Элементали
+PageTemplate.set({breadcrumb: [0,4,4,0]});
+????
+
+find_element_by_class_name("breadcrumb")
+
+
+<div>Этот NPC может быть найден в следующих зонах: <a href="/zone=2100">Мародон</a>.</div>
+
+
+
+
+WH.markup.printHtml
+
+    <table class="infobox-inner-table">
+    <tr class="infobox-heading">
+        <th id="infobox-краткая-информация">Краткая информация</th>
+    </tr>
+    <tr><td>
+            <div class="infobox-spacer"></div>
+                <div id="infobox-contents-0"></div>
+        <script>
+            WH.markup.printHtml("[ul][li]\u0423\u0440\u043e\u0432\u0435\u043d\u044c: 51[\/li][li]\u0422\u0438\u043f: [span class=\"icon-boss\"]\u044d\u043b\u0438\u0442.[\/span][\/li][li]\u0420\u0435\u0430\u043a\u0446\u0438\u044f: [color=q10]A[\/color] [color=q10]\u041e[\/color][\/li][li]\u0414\u0435\u043d\u044c\u0433\u0438: [tooltip=tooltip_avgmoneydropped][money=1169][\/tooltip][\/li][li]\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u043e \u0432 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0438 1.13.2.30406[\/li][\/ul]", "infobox-contents-0", {
+                allow: WH.markup.CLASS.STAFF,
+                dbPage: true,            });
+        </script>
+                        </td></tr>
+    </table>
+
+
+<script>
+WH.markup.printHtml("[ul][li]\u0423\u0440\u043e\u0432\u0435\u043d\u044c: 51[\/li][li]\u0422\u0438\u043f: [span class=\"icon-boss\"]\u044d\u043b\u0438\u0442.[\/span][\/li][li]\u0420\u0435\u0430\u043a\u0446\u0438\u044f: [color=q10]A[\/color] [color=q10]\u041e[\/color][\/li][li]\u0414\u0435\u043d\u044c\u0433\u0438: [tooltip=tooltip_avgmoneydropped][money=1169][\/tooltip][\/li][li]\u0414\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u043e \u0432 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0438 1.13.2.30406[\/li][\/ul]", "infobox-contents-0", {
+</script>
+
+
+Добыча
+
+new Listview({template: 'item', id: 'drops'
+Listview.funcBox.addModeIndicator, data:[{"
+
+Подскажите. Спарсил строку с юникодом, [li]\u0423\u0440\u043e\u0432\u0435\u043d\u044c: 5[\/li], как ее правильно декодировать? 
+info.decode('utf-8', errors='ignore')) ругается
+AttributeError: 'str' object has no attribute 'decode'
+
+
+template: 'item', id: 'outfit'
+template: 'item', id: 'drops'
+template: 'item', id: 'sells'
+template: 'item', id: 'pickpocketing'
+template: 'item', id: 'skinning'
+template: 'item', id: 'summoned-by'
+
+template: 'spell', id: 'teaches-recipe'
+template: 'spell', id: 'teaches-ability'
+template: 'spell', id: 'teaches-other'
+template: 'spell', id: 'abilities'
+
+template: 'sound', id: 'sounds'
+template: 'guide', id: 'guides'
+
+template: 'npc', id: 'same-model-as'
+
+template: 'quest', id: 'starts'
+template: 'quest', id: 'ends'
+template: 'quest', id: 'objective-of'
+
+
+
+
